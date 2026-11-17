@@ -1,13 +1,9 @@
-# BizPilot · Olist 履约运营工作台
+# BizPilot · Olist 履约调查
 
-[打开公开工作台](https://bizpilot-olist.streamlit.app/)
+[打开工作台](https://bizpilot-olist.streamlit.app/)
 
-本项目以 Olist 公开历史订单为案例，面向商家运营与物流团队。通过履约总览、调查助手和证据审计，判断延迟是否异常、定位优先核查环节，并生成运营核查工单草稿。
+基于真实 Olist 公开历史订单的五轮商家履约调查。通过「调查总览」查看结论，或切换到「逐轮证据」查看样本、SQL、参数和判断修订。支持导出全部五轮证据。
 
-公开版按已验证 SQL 证据和规则生成建议。每轮提供查询参数、样本口径与完整 JSON。路线或承运商层面的原因需要承运记录核实。
+[Olist Brazilian E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
-数据来源：[Olist Brazilian E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)。
-
-本地运行：
-
-`python -m pip install -r requirements.txt`，然后执行 `python -m streamlit run app.py`。
+本地启动：先运行 `python -m pip install -r requirements.txt`，再运行 `python -m streamlit run app.py`。
