@@ -33,7 +33,7 @@ from bizpilot.seller_ui import _public_case, _round_view
 case_path = source / "public_case" / "olist_seller_verified.json"
 case = _public_case(case_path)
 rounds = {row["round"]: row for row in case["rounds"]}
-st.markdown(
+st.html(
     """<style>
     [data-testid="stAppViewContainer"]{background:#f3f7fa}
     [data-testid="stHeader"]{background:transparent}
@@ -47,7 +47,6 @@ st.markdown(
     <div class="biz-hero"><div class="biz-brand">BizPilot · Olist 公开数据案例</div>
     <h1>商家履约运营工作台</h1>
     <p>发现异常、定位履约环节、生成运营核查工单。</p></div>""",
-    unsafe_allow_html=True,
 )
 st.caption(f"商家 {case['seller_id']} · Olist 历史订单 · 只读案例")
 overview, decision, audit = st.tabs(["履约总览", "调查助手", "证据审计"])
